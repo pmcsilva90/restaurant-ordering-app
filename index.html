@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <p class="sub-title">The best burgers and pizzas in town.</p>
+        </header>
+        <main>
+            <div class="food-item">
+                <img
+                    class="food-item-img"
+                    src="images/pizza-graphic.png"
+                    alt="A pizza graphic."
+                    class="item-graphic"
+                />
+                <div class="food-item-info">
+                    <h2 class="food-item-title">Pizza</h2>
+                    <p class="food-item-ingredients">
+                        pepperoni, mushroom, mozzarella
+                    </p>
+                    <p class="food-item-price">$14</p>
+                </div>
+                <button class="add-to-cart-btn">+</button>
+            </div>
+            <div class="food-item">
+                <img
+                    class="food-item-img"
+                    src="images/burger-graphic.png"
+                    alt="A burger graphic."
+                    class="item-graphic"
+                />
+                <div class="food-item-info">
+                    <h2 class="food-item-title">Hamburger</h2>
+                    <p class="food-item-ingredients">
+                        beef, cheese, lettuce
+                    </p>
+                    <p class="food-item-price">$12</p>
+                </div>
+                <button class="add-to-cart-btn">+</button>
+            </div>
+            <div class="food-item">
+                <img
+                    class="food-item-img"
+                    src="images/beer-graphic.png"
+                    alt="A beer graphic."
+                    class="item-graphic"
+                />
+                <div class="food-item-info">
+                    <h2 class="food-item-title">Beer</h2>
+                    <p class="food-item-ingredients">
+                        grain, hops, yeast, water
+                    </p>
+                    <p class="food-item-price">$12</p>
+                </div>
+                <button class="add-to-cart-btn">+</button>
+            </div>
+            <div class="cart">
+                <h2 class="cart-h2">Your order</h2>
+                <div class="cart-item">
+                    <h3>Pizza</h3>
+                    <button class="remove-item">remove</button>
+                    <p class="cart-item-price">$14</p>
+                </div>
+                <div class="cart-item">
+                    <h3>Beer</h3>
+                    <button class="remove-item">remove</button>
+                    <p class="cart-item-price">$12</p>
+                </div>
+                <div class="total">
+                    <h3>Total price:</h3>
+                    <p class="total-price">$26</p>
+                </div>
+                <button class="complete-order">Complete Order</button>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

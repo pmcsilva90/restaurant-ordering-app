@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: "Smythe", serif;
+    font-weight: 400;
+    /* width: 600px; */
+}
+
+h1{
+    font-size: 2.4375rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.sub-title{
+    font-size: 1.40125rem;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.food-item-ingredients{
+    color: #8b8b8b;
+}
+
+.food-item-price, .cart-item-price, .total-price{
+    font-size: 1.25rem;
+}
+
+.cart-h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+header{
+    background-image: url(images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 46px 46px;
+}
+
+main{
+    padding: 46px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.food-item{
+    display: flex;
+    gap: 31px;
+    border-bottom: 1px solid #d2d2d2;
+    height: 140px;
+    margin-bottom: 45px;
+}
+
+.food-item-img{
+    width: 4.9375rem;
+    height: 4.9375rem;
+}
+
+.food-item-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.add-to-cart-btn{
+    width: 50px;
+    height: 50px;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    background-color: transparent;
+    margin-left: auto;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    /* border: 1px solid red; */
+    margin-bottom: .5rem;
+
+}
+
+.cart-item-price{
+    margin-left: auto;
+}
+
+.remove-item{
+    font-size: .75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BBBBBB;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #393333;
+    margin-top: 1rem;
+    margin-bottom: 3.3125rem;
+    padding-top: 0.875rem;
+}
+
+.total-price{
+    margin-left: auto;
+}
+
+.complete-order{
+    display: block;
+    width: 100%;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+    height: 3.75rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
