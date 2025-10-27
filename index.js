@@ -33,7 +33,6 @@ function render() {
                 </div>
                 <button 
                     class="add-to-cart-btn" 
-                    id="add-to-cart-btn"
                     data-item-id="${item.id}"
                     >+</button>
             </div>
@@ -53,15 +52,17 @@ function render() {
             cartHtmlArray.push(`
                 <div class="cart-item">
                 <h3>${item.name}</h3>
-                <button id="remove-item-btn" class="remove-item" data-item-index="${index}">remove</button>
+                <button class="remove-item" data-item-index="${index}">remove</button>
                 <p class="cart-item-price">$${item.price}</p>
                 </div>
                 `)
             totalPrice += item.price
             })
 
-        if (applyDiscount().length > 0){
-            applyDiscount().forEach(deal=>{
+        const discounts = applyDiscount()
+
+        if (discounts.length > 0){
+            discounts.forEach(deal=>{
                 cartHtmlArray.push(`
                 <div class="cart-item discount">
                 <h3>${deal.name}</h3>
@@ -105,7 +106,7 @@ function applyDiscount(){
             mealDeals.push(
                 {
                     name: "Pizza and beer meal deal",
-                    price: -((cart[0].price + cart[2].price) * .3).toFixed(2)
+                    price: -parseFloat(((cart[0].price + cart[2].price) * 0.3).toFixed(2))
                 }
             )
         }
@@ -118,7 +119,7 @@ function applyDiscount(){
             mealDeals.push(
                 {
                     name: "Hamburger and beer meal deal",
-                    price: -((cart[1].price + cart[2].price) * .3).toFixed(2)
+                    price: -parseFloat(((cart[1].price + cart[2].price) * 0.3).toFixed(2))
                 }
             )
         }
@@ -134,9 +135,10 @@ function applyDiscount(){
 
 render();
 
+
 document.addEventListener("click", (e) => {
-    if (e.target.id === "add-to-cart-btn") {
-        // console.log(e.target.dataset.itemId)
+    if (e.target.classList.contains("add-to-cart-btn")) {
+        // console.log(e.target.classList)
         cart.push(
             menuArray.filter(
                 (item) => item.id === Number(e.target.dataset.itemId)
@@ -144,7 +146,7 @@ document.addEventListener("click", (e) => {
         );
         applyDiscount()
         render();
-    } else if (e.target.id === "remove-item-btn"){
+    } else if (e.target.classList.contains("remove-item-btn")){
         cart.splice(Number(e.target.dataset.itemIndex), 1)
 
         render()
