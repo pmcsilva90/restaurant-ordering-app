@@ -146,7 +146,7 @@ document.addEventListener("click", (e) => {
         );
         applyDiscount()
         render();
-    } else if (e.target.classList.contains("remove-item-btn")){
+    } else if (e.target.classList.contains("remove-item")){
         cart.splice(Number(e.target.dataset.itemIndex), 1)
 
         render()

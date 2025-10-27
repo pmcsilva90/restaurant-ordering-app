@@ -98,6 +98,7 @@ main{
     border: 1.5px solid #DEDEDE;
     background-color: transparent;
     margin-left: auto;
+    flex-shrink: 0;
 }
 
 .cart-item{
