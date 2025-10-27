@@ -57,6 +57,11 @@ header{
     padding: 46px 46px;
 }
 
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 main{
     padding: 46px;
     max-width: 600px;
@@ -131,7 +136,7 @@ main{
     margin-left: auto;
 }
 
-.complete-order{
+.complete-order, .pay-btn{
     display: block;
     width: 100%;
     background-color: #16DB99;
@@ -143,4 +148,62 @@ main{
     font-weight: bold;
     font-size: 1rem;
 
+}
+
+.checkout-modal{
+    display: none;
+    background-color: white;
+    width: min(524px, 80%);
+    height: 542px;
+    padding: 30px 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: #000 0px 0px 1000px;
+}
+
+
+legend{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 2rem 0 4rem;
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+}
+
+.pay-btn{
+    font-size: 1.25rem;
+    height: 4.45625rem;
+    margin-top: 4rem;
+}
+
+.checkout-msg-container{
+    background-color: #ECFDF5;
+    height: 120px;
+    color: #065F46;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount{
+    color: #065f0a;
 }

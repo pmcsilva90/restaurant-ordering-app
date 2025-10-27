@@ -10,77 +10,55 @@
     </head>
     <body>
         <header>
-            <h1>Jimmy's Diner</h1>
-            <p class="sub-title">The best burgers and pizzas in town.</p>
+            <div class="container">
+                <h1>Jimmy's Diner</h1>
+                <p class="sub-title">The best burgers and pizzas in town.</p>
+            </div>
         </header>
         <main>
-            <div class="food-item">
-                <img
-                    class="food-item-img"
-                    src="images/pizza-graphic.png"
-                    alt="A pizza graphic."
-                    class="item-graphic"
-                />
-                <div class="food-item-info">
-                    <h2 class="food-item-title">Pizza</h2>
-                    <p class="food-item-ingredients">
-                        pepperoni, mushroom, mozzarella
-                    </p>
-                    <p class="food-item-price">$14</p>
-                </div>
-                <button class="add-to-cart-btn">+</button>
-            </div>
-            <div class="food-item">
-                <img
-                    class="food-item-img"
-                    src="images/burger-graphic.png"
-                    alt="A burger graphic."
-                    class="item-graphic"
-                />
-                <div class="food-item-info">
-                    <h2 class="food-item-title">Hamburger</h2>
-                    <p class="food-item-ingredients">
-                        beef, cheese, lettuce
-                    </p>
-                    <p class="food-item-price">$12</p>
-                </div>
-                <button class="add-to-cart-btn">+</button>
-            </div>
-            <div class="food-item">
-                <img
-                    class="food-item-img"
-                    src="images/beer-graphic.png"
-                    alt="A beer graphic."
-                    class="item-graphic"
-                />
-                <div class="food-item-info">
-                    <h2 class="food-item-title">Beer</h2>
-                    <p class="food-item-ingredients">
-                        grain, hops, yeast, water
-                    </p>
-                    <p class="food-item-price">$12</p>
-                </div>
-                <button class="add-to-cart-btn">+</button>
-            </div>
-            <div class="cart">
-                <h2 class="cart-h2">Your order</h2>
-                <div class="cart-item">
-                    <h3>Pizza</h3>
-                    <button class="remove-item">remove</button>
-                    <p class="cart-item-price">$14</p>
-                </div>
-                <div class="cart-item">
-                    <h3>Beer</h3>
-                    <button class="remove-item">remove</button>
-                    <p class="cart-item-price">$12</p>
-                </div>
-                <div class="total">
-                    <h3>Total price:</h3>
-                    <p class="total-price">$26</p>
-                </div>
-                <button class="complete-order">Complete Order</button>
-            </div>
+            <section class="food-menu" id="food-menu">
+                
+            </section>
+                
+            <section class="cart" id="cart">
+                
+            </section>
         </main>
-        <script src="index.js"></script>
+        <div id="checkout-modal" class="checkout-modal">
+            <form id="pay-form">
+                <legend>Enter card details</legend>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                />
+
+                <input
+                    type="text"
+                    id="card-number"
+                    name="card-number"
+                    inputmode="numeric"
+                    pattern="[0-9]{16}"
+                    placeholder="Enter card number"
+                    required
+                />
+
+                <input
+                    type="text"
+                    id="cvv"
+                    name="cvv"
+                    inputmode="numeric"
+                    pattern="[0-9]{3}"
+                    placeholder="Enter CVV"
+                    required
+                />
+
+                <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
+            </form>
+        </div>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
