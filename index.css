@@ -207,3 +207,11 @@ input{
 .discount{
     color: #065f0a;
 }
+
+.add-to-cart-btn, .remove-item, .complete-order, .pay-btn {
+  cursor: pointer;
+}
+
+button:focus, input:focus {
+  outline: 2px solid #16DB99;
+}
