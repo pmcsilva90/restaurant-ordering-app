@@ -3,6 +3,8 @@
 A simple restaurant ordering web app built with HTML, CSS, and JavaScript.  
 This was a solo practice project based on a Scrimba Frontend Developer Career Path challenge.
 
+Live demo [here](https://restaurant-app-by-pedro-silva.netlify.app/)
+
 ![screenshot](image.png) <!-- Optional: Add screenshot of the app UI -->!
 
 ---
